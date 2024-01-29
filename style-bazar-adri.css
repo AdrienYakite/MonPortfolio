@@ -1,0 +1,336 @@
+/*////////////////////////////////////////////////////////////////*/
+
+                            /*BALISES*/
+
+/*////////////////////////////////////////////////////////////////*/
+body{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    color: white ;
+    margin:0px;
+    font-size: 1.1em;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+a:hover{
+    opacity: 0.6;
+}
+
+
+
+h1{
+    font-size:3.5em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+section h2{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h2,h3,h4 {
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+em{
+    color: #E4572E;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+header{
+    background-color: black ;
+    background-size:auto;
+    width:auto;
+    height:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left : 50px;
+    padding-right : 50px;
+   }
+
+
+
+footer {
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+                            /*CLASSES*/
+
+/*////////////////////////////////////////////////////////////////*/
+
+
+.haut_de_page, .bas_de_page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 800px;
+    justify-items: space-around;
+}
+
+
+
+.intro-lecons{
+    color: black;
+}
+
+.conteneur-intro{
+    display: grid;
+
+}
+
+
+.formContact{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    
+}
+
+.bouton{
+   background : black;
+   color: white;
+   border-radius: 20px;
+   font-size: 1em;
+   padding: 10px;
+}
+
+.formulaireContact{
+    display:flex;
+    flex-direction: column;  
+    flex-wrap: wrap;  
+    gap: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+
+}
+
+.formulaireContact input{
+    border : black solid 1px;
+    border-radius: 9px;
+    height: 50px;
+    width: 400px;
+}
+
+.formulaireContact label{
+    text-align: left;
+}
+
+.formulaireContact textarea{
+    border : black solid 1px;
+    border-radius: 9px;
+    height: 100px;
+    width: 800px;
+}
+
+.formulaireContact button{
+    width: 10%;
+    height: 40px;
+    align-self: left;
+}
+
+.formulaireContact h3{
+    font-size: 0.9em;
+    text-align: center;
+    
+}
+
+
+
+.msgUserInput{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+
+}
+
+#msgUser{
+    width: 80%;
+}
+
+
+.nomEtMail{
+    display: flex;
+    flex-direction: row;
+    width:100% ;
+    justify-content: space-around ;    
+}
+
+#nomUser{
+   width: 300px;
+}
+
+#mailUser{
+    width: 300px;
+}
+
+
+.intro-apropos p{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 50px;
+    text-align: justify;
+    width: 60%;
+    border-left: solid 2px white;
+
+}
+
+#premierP{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 50px;
+    text-align: justify;
+    width: 60%;
+    border-left: solid 2px white;
+
+}
+
+#AzerType{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    gap: 20px;
+
+}
+
+#AzerType p{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size:0.9em;
+    
+}
+
+#AzerType a {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+
+#RobbieLens{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+    gap:20px;
+
+}
+
+#RobbieLens p{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size:0.9em;
+    
+}
+
+#RobbieLens a {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+#LesBonnesPieces{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    gap: 20px;
+
+}
+
+#LesBonnesPieces p{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size:0.9em;
+    
+}
+
+#LesBonnesPieces a {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+
+#sitesEtApp{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+#liensSecours{
+    display: flex;
+    flex-direction: column;
+    margin-left: 520px;
+    margin-right: 520px;
+    margin-bottom:10%;  
+    border: solid 5px white;
+}
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnContact{
+    display: flex;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom:20%;
+   
+}
