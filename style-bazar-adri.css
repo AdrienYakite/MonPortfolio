@@ -49,6 +49,7 @@ h2,h3,h4 {
 
 p{
     font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
 }
 em{
     color: #E4572E;
@@ -343,6 +344,20 @@ main{
     /* Ajoutez des styles spécifiques pour les écrans de petite taille ici */
     body {
       font-size: 14px;
+    }
+
+    p{
+        color: red;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    h1,h2,h3,h4{
+        text-align: center;
+    }
+
+    img{
+        max-width: fit-content;
     }
   }
   
