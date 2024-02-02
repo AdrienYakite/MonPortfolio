@@ -347,13 +347,12 @@ main{
     }
 
     p{
-        color: red;
         overflow: hidden;
         text-align: center;
     }
 
     h1,h2,h3,h4{
-        text-align: center;
+        text-align: ;
     }
 
     img{
