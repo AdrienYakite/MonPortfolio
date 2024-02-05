@@ -97,18 +97,17 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 65%;
+    gap: 50%;
     justify-items: space-around;
 }
 
 .bas_de_page{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     margin-top: 7.5%;
     margin-right: 100px;
     padding-right: 100px;
-    border: red 1px solid;
 }
 
 
@@ -340,8 +339,31 @@ main{
     margin-right: 25%;
 }
 
+#lienProjetsContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
 
-/*MEDIA QUERIES*/
+#lienProjetsContact:hover{
+    opacity: 0.6;
+}
+
+#lienProjetsContact button{
+    display: flex;
+    padding: 15px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border: black 1px solid;
+     
+}
+
+
+
+
+/*//////////////////////////////////MEDIA QUERIES//////////////////////////////////////////////////////////*/
 
 
 @media only screen and (max-width: 768px) {
