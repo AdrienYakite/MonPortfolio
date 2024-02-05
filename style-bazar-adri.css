@@ -93,13 +93,22 @@ main{
 
 /*////////////////////////////////////////////////////////////////*/
 
-
-.haut_de_page, .bas_de_page{
+.haut_de_page{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 65%;
     justify-items: space-around;
+}
+
+.bas_de_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 7.5%;
+    margin-right: 100px;
+    padding-right: 100px;
+    border: red 1px solid;
 }
 
 
@@ -224,7 +233,6 @@ main{
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%;
-    margin-bottom: 10%;
     padding: 50px;
     text-align: justify;
     width: 60%;
@@ -237,8 +245,6 @@ main{
     flex-direction: row;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10%;
-    gap: 20px;
 
 }
 
@@ -246,8 +252,7 @@ main{
     display: flex;
     align-items: center;
     margin-left: 25px;
-    font-size:0.9em;
-    
+    font-size:0.9em   
 }
 
 #AzerType a {
@@ -262,8 +267,6 @@ main{
     flex-direction: row;
     margin-left: 20%;
     margin-right: 20%;
-    gap:20px;
-
 }
 
 #RobbieLens p{
@@ -285,9 +288,8 @@ main{
     flex-direction: row;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     gap: 20px;
-
 }
 
 #LesBonnesPieces p{
@@ -308,6 +310,8 @@ main{
 #sitesEtApp{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 200px;
 }
 
@@ -371,7 +375,7 @@ main{
 
     p{
         text-align: justify;
-        
+
     }
 
 
