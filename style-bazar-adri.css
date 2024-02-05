@@ -98,7 +98,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50%;
+    gap: 65%;
     justify-items: space-around;
 }
 
@@ -359,6 +359,19 @@ main{
         display: flex;
         flex-direction: row;
         flex-wrap:nowrap;
+    }
+
+    .haut_de_page, .bas_de_page{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50%;
+        justify-items: space-around;
+    }
+
+    p{
+        text-align: justify;
+        
     }
 
 
