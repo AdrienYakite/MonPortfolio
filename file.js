@@ -6,7 +6,7 @@ const zoneNom = document.getElementById("nomUser");
 const zoneMsg = document.getElementById("msgUser");
 let zoneForm = document.querySelector(".formContact");
 
-btnEnvoyer.addEventListener("click", (event)=>{
+btnEnvoyer.addEventListener("click", ()=>{
     const emailUser = zoneEmail.value;
     console.log(emailUser);
     
