@@ -114,6 +114,17 @@ span{
     text-align: justify;
 }
 
+#mesProjets,#presentationAdrien a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+#presentationAdrien span{
+    color: orange;
+    text-decoration: none;
+}
+
+
 /*////////////////////////////////////////////////////////////////*/
 
                             /*ANIMATIONS*/
