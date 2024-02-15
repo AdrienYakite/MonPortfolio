@@ -123,7 +123,6 @@ span{
     text-decoration: none;
 }
 
-
 /*////////////////////////////////////////////////////////////////*/
 
                             /*ANIMATIONS*/
@@ -190,5 +189,22 @@ span{
     }
   }
 
+/*////////////////////////////////////////////////////////////////*/
 
+                            /*MEDIA QUERIES*/
+
+/*////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 767px) {
+    h1,h2,h3,h4,p{
+        text-align: center;
+        overflow: hidden;
+        
+    }
+}
+ 
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+  
+ 
   
