@@ -57,10 +57,6 @@ form{
     padding-bottom: 50%;
 }
 
-form input{
-
-}
-
 button{
     border: 1px white solid;
     background-color: black;
@@ -114,9 +110,12 @@ span{
     text-align: justify;
 }
 
-#mesProjets,#presentationAdrien a:hover {
+#mesProjets a:hover{
     color: orange;
-    text-decoration: underline;
+}
+
+#presentationAdrien a:hover{
+    color: orange;
 }
 
 #presentationAdrien span{
