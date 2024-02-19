@@ -1,12 +1,15 @@
 // gestion du form de contact
 
-const btnEnvoyer = document.querySelector("button");
+const formulaire = document.querySelector("#formulaireContact")
 const zoneEmail = document.getElementById("mailUser");
 const zoneNom = document.getElementById("nomUser");
 const zoneMsg = document.getElementById("msgUser");
 let zoneForm = document.querySelector(".formContact");
 
-btnEnvoyer.addEventListener("click", ()=>{
+formulaire.addEventListener("submit", (event)=>{
+    event.preventDefault();
+
+    //récupération infos user
     const emailUser = zoneEmail.value;
     console.log(emailUser);
     
@@ -16,15 +19,51 @@ btnEnvoyer.addEventListener("click", ()=>{
     const msgUser = zoneMsg.value;
     console.log(msgUser);
     
+    //regles de validation cas simples et complexes
+    if(emailUser==="" || nomUser==="" ||msgUser==="" ){
+        console.log("Champs vide !");
+
+        zoneEmail.classList.add("erreurSaisie")
+        zoneEmail.setAttribute("placeholder", "Erreur de saisie !")
+
+        zoneNom.classList.add("erreurSaisie")
+        zoneNom.setAttribute("placeholder", "Erreur de saisie !")
+
+        zoneMsg.classList.add("erreurSaisie")
+        zoneMsg.setAttribute("placeholder", "Erreur de saisie !")
+    } else {
+        let regex = new RegExp("^[a-z0-9._]+@[a-z0-9._]+\\.[a-z0-9._]+(\\.[a-z0-9._]+)?$", "i");
+        let testEmail = regex.test(emailUser);
+        console.log(testEmail)
+            if(testEmail===true){
+                console.log("Champs correct")
+                zoneForm.innerHTML="";
+                zoneForm.innerHTML="Merci pour votre message "+ nomUser +", je vous recontacterai au plus vite !"
+            }else{
+                zoneEmail.classList.add("erreurSaisie")
+                zoneEmail.setAttribute("placeholder", "Erreur de saisie !")
+                console.log("Champs incorrect")
+            }
+    }
+
+  
+
+    
+
+
+
+
+
+
+
+
+
     //envoie du mail selon les infos récoltées
      
     
     
     
-    //affichage message sur la page
-    zoneForm.innerHTML=``;
-    zoneForm.classList.add("msgFinal");
-    zoneForm.innerText=`Merci pour votre message `  + nomUser + `, je vous recontacterai au plus vite !`  ;
+    
 
-    event.preventDefault();
+    
 })

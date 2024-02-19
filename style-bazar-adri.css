@@ -123,6 +123,10 @@ span{
     text-decoration: none;
 }
 
+.erreurSaisie{
+    border: solid 2px red;
+    background-color: darksalmon;
+}
 /*////////////////////////////////////////////////////////////////*/
 
                             /*ANIMATIONS*/
