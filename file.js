@@ -20,18 +20,6 @@ formulaire.addEventListener("submit", (event)=>{
     console.log(msgUser);
     
     //regles de validation cas simples et complexes
-    if(emailUser==="" || nomUser==="" ||msgUser==="" ){
-        console.log("Champs vide !");
-
-        zoneEmail.classList.add("erreurSaisie")
-        zoneEmail.setAttribute("placeholder", "Erreur de saisie !")
-
-        zoneNom.classList.add("erreurSaisie")
-        zoneNom.setAttribute("placeholder", "Erreur de saisie !")
-
-        zoneMsg.classList.add("erreurSaisie")
-        zoneMsg.setAttribute("placeholder", "Erreur de saisie !")
-    } else {
         let regex = new RegExp("^[a-z0-9._]+@[a-z0-9._]+\\.[a-z0-9._]+(\\.[a-z0-9._]+)?$", "i");
         let testEmail = regex.test(emailUser);
         console.log(testEmail)
@@ -44,7 +32,7 @@ formulaire.addEventListener("submit", (event)=>{
                 zoneEmail.setAttribute("placeholder", "Erreur de saisie !")
                 console.log("Champs incorrect")
             }
-    }
+
 
   
 
