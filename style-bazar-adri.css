@@ -51,10 +51,23 @@ p{
 form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    padding-bottom: 50%;
+    gap: 5px;
+    margin-top: 0px;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 500px;
+    margin: auto;
+    border: 1px black solid;
+    border-radius: 10px;
+
 }
 
 button{
@@ -63,7 +76,15 @@ button{
     color: white;
     border-radius: 20px;
     padding: 10px;
+    width: 100px;
+    margin: auto;
 }
+
+button:hover{
+    opacity: 0.6;
+}
+
+
 
 nav{
     display: flex;
@@ -92,12 +113,25 @@ span{
 
 
 
-
 /*////////////////////////////////////////////////////////////////*/
 
                             /*CLASSES et ID*/
 
 /*////////////////////////////////////////////////////////////////*/
+#presentationAdrien + p{
+    padding-left: 50px;
+    margin-left: 200px;
+    border-left: solid 2px white;
+    font-size: larger;
+}
+
+
+
+.nomEtMail{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;    
+}
 
 
 #presentationDuDev, #mesProjets, #mesCompetences {
@@ -111,11 +145,11 @@ span{
 }
 
 #mesProjets a:hover{
-    color: orange;
+   text-decoration: underline;
 }
 
 #presentationAdrien a:hover{
-    color: orange;
+    text-decoration: underline;
 }
 
 #presentationAdrien span{
@@ -127,6 +161,30 @@ span{
     border: solid 2px red;
     background-color: darksalmon;
 }
+
+.titreProjetLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.illustrationsAnimeesProjets{
+    display: flex;
+    flex-direction: column;
+}
+
+.illustrationsAnimeesProjets img{
+    width: 1000px;
+    height: 1000px;
+}
+
+#listeProjets{
+margin-top: 0px;
+}
+
+
 /*////////////////////////////////////////////////////////////////*/
 
                             /*ANIMATIONS*/
